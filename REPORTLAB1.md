@@ -2,7 +2,7 @@
 ## Студент
 Кашкин Николай ИУ8-23
 ## Homework
-1. Скачайте библиотеку *boost* с помощью утилиты **wget**. Адрес для скачивания 'https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz'.
+1. Скачайте библиотеку *boost* с помощью утилиты **wget**. Адрес для скачивания `https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz`.
 ```
 $ wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz
 ```
@@ -37,7 +37,7 @@ boost_1_69_0.tar.gz                                100%[========================
 
 2024-03-27 18:32:10 (3,16 MB/s) - ‘boost_1_69_0.tar.gz’ сохранён [111710205/111710205]
 ```
-2. Разархивируйте скаченный файл в директорию ~/boost_1_69_0.
+2. Разархивируйте скаченный файл в директорию `~/boost_1_69_0`.
 ```
 $ tar -xf boost_1_69_0.tar.gz -C ~/
 ```

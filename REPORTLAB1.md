@@ -42,7 +42,7 @@ boost_1_69_0.tar.gz                                100%[========================
 $ tar -xf boost_1_69_0.tar.gz -C ~/
 ```
 Данная команда не выводить ничего в командную строку
-3. Подсчитайте количество файлов в директории ~/boost_1_69_0 не включая вложенные директории.
+3. Подсчитайте количество файлов в директории `~/boost_1_69_0` не включая вложенные директории.
 ```
 $ find ~/boost_1_69_0 -maxdepth 1 -type f | wc -l
 ```
@@ -50,7 +50,7 @@ $ find ~/boost_1_69_0 -maxdepth 1 -type f | wc -l
 ```
 12
 ```
-4. Подсчитайте количество файлов в директории ~/boost_1_69_0 включая вложенные директории.
+4. Подсчитайте количество файлов в директории `~/boost_1_69_0` включая вложенные директории.
 ```
 $ find ~/boost_1_69_0 -type f | wc -l
 ```
@@ -58,7 +58,7 @@ $ find ~/boost_1_69_0 -type f | wc -l
 ```
 61191
 ```
-5. Подсчитайте количество заголовочных файлов, файлов с расширением .cpp, сколько остальных файлов (не заголовочных и не .cpp).
+5. Подсчитайте количество заголовочных файлов, файлов с расширением `.cpp`, сколько остальных файлов (не заголовочных и не `.cpp`).
 ```
 $ find ~/boost_1_69_0 -type f -iname "*.hpp" | wc -l
 ```
@@ -80,7 +80,7 @@ $ find ~/boost_1_69_0 -type f ! -name "*.hpp" ! -name "*.cpp" | wc -l
 ```
 32505
 ```
-6. Найдите полный путь до файла any.hpp внутри библиотеки boost.
+6. Найдите полный путь до файла `any.hpp` внутри библиотеки *boost*.
 ```
 $ find ~/boost_1_69_0 -type f -name "any.hpp"
 ```
@@ -107,13 +107,13 @@ $ find ~/boost_1_69_0 -type f -name "any.hpp"
 /home/meguai/boost_1_69_0/boost_output/include/boost/fusion/algorithm/query/detail/any.hpp
 /home/meguai/boost_1_69_0/boost_output/include/boost/xpressive/detail/utility/any.hpp
 ```
-7. Выведите в консоль все файлы, где упоминается последовательность boost::asio.
+7. Выведите в консоль все файлы, где упоминается последовательность `boost::asio`.
 ```
 $ grep -r "boost::asio" ~/boost_1_69_0
 $ grep -r "boost::asio" ~/boost_1_69_0 > ~/boost_1_69_0_files_with_boost_asio.txt
 ```
 [Вывод в файле 1.txt](https://gist.github.com/VisMute/aae9a6458884c6d6a1ec3dec1e8ae79a)
-8. Скомпилируйте boost.
+8. Скомпилируйте *boost*.
 ```
 $ sudo apt install libicu-dev
 $ ./bootstrap.sh --prefix=boost_output
@@ -124,7 +124,7 @@ $ ./b2 install
 [Вывод в файле 3.txt](https://gist.github.com/VisMute/7a24c4c98d0f5c4f6345997eacc447e4)
 [Вывод в файле 4.txt](https://gist.github.com/VisMute/931fdf37d1c6f167c67146d62aacb0aa)
 [Вывод в файле 5.txt](https://gist.github.com/VisMute/354dc99acbd9d07733bd4f84920a0921)
-9. Перенесите все скомпилированные на предыдущем шаге статические библиотеки в директорию ~/boost-libs.
+9. Перенесите все скомпилированные на предыдущем шаге статические библиотеки в директорию `~/boost-libs`.
 ```
 $ mv boost_output/lib/*.a ~/boost-libs
 ```
